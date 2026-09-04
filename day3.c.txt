@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+int Fahrenheit,ce;
+printf("Enter the value of Fahrenheit ");
+scanf("%d",&Fahrenheit);
+
+ce =(Fahrenheit-32)*5/9;
+printf("convert temp from Celsius to Fahrenheit is %d\n",ce);
+
+return 0;
+}
