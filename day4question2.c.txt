@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main()
+{
+int a,b;
+
+printf("Enter the a");
+scanf("%d",&a);
+b=a*(a+1)/2;
+printf(" the sum of  first %d natural  is %d\n",a,b);
+return 0;
+}
