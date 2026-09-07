@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+float p,r,t,s,c;
+
+printf("Enter the value of p(principal):");
+scanf("%f",&p);
+printf("Enter the value of r (rate):");
+scanf("%f",&r);
+printf("Enter the value of t(in years):");
+scanf("%f",&t);
+printf("the value of pis %.2f r is %.2f t is %.2f\n",p,r,t);
+s =(p*r*t)/100;
+c=p*pow((1+r/100),t)-p;
+printf("\nthe simple interest is %.2f\n",s);
+printf("\nthe compound interest is %.2f\n",c);
+return 0;
+}
