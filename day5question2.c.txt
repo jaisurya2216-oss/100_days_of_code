@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main()
+{
+int total_sec ,h,min,sec;
+printf(" Enter the value of time in sec\n");
+scanf("%d",&total_sec);
+h=total_sec/3600;
+min =(total_sec%3600)/60;
+sec =(total_sec%60);
+
+printf("Time: %02d:%02d:%02d\n", h, min, sec);
+return 0;
+}
