@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    int binary[32], i = 0, j;
+printf("Enter a binary number: ");
+    while (1) {
+scanf("%1d", &binary[i]);
+
+if (binary[i] != 0 && binary[i] != 1) {   
+printf("Invalid binary number!\n");
+            return 0;
+        }
+
+i++;
+
+if (getchar() == '\n')
+            break;
+    }
+
+    printf("1's Complement = ");
+
+    for (j = 0; j < i; j++) {
+        if (binary[j] == 0)
+            printf("1");
+        else
+            printf("0");
+    }
+
+    return 0;
+}
