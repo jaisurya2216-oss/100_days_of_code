@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int number, firstDigit, lastDigit, numDigits, divisor, middlePart, swappedNumber;
+
+    
+    printf("Enter an integer: ");
+    scanf("%d", &number);
+
+       lastDigit = number % 10;
+
+   
+    firstDigit = number;
+    while (firstDigit >= 10) {
+        firstDigit /= 10;
+    }
+
+   
+    numDigits = (int)log10(number) + 1;
+
+    
+    divisor = (int)pow(10, numDigits - 1);
+
+    
+    middlePart = number % divisor;
+    middlePart = middlePart / 10;
+
+    
+    swappedNumber = (lastDigit * divisor) + (middlePart * 10) + firstDigit;
+
+    
+    printf("Number after swapping first and last digit: %d", swappedNumber);
+
+    return 0;
+}
